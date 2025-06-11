@@ -13,11 +13,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const CONFIG = {
     API_FEED_POSTS:
-      "https://codeconnect-production-ac3a.up.railway.app/api/v1/Posts",
+      "https://back-production-87f2.up.railway.app/api/v1/Posts",
     API_BUSCA_TITULO:
-      "https://codeconnect-production-ac3a.up.railway.app/api/v1/Posts/titulo",
+      "https://back-production-87f2.up.railway.app/api/v1/Posts/titulo",
     API_DETALHES_POST:
-      "https://codeconnect-production-ac3a.up.railway.app/api/v1/Posts",
+      "https://back-production-87f2.up.railway.app/api/v1/Posts",
     PERFIL_PAGE: "../pages/perfil.html",
     MESSAGE_DISPLAY_TIME: 3000,
   };

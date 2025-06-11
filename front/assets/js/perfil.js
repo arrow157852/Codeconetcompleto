@@ -27,15 +27,15 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const CONFIG = {
     API_BUSCAR_POSTS_USUARIO:
-      "https://codeconnect-production-ac3a.up.railway.app/api/v1/Posts/usuario",
+      "https://back-production-87f2.up.railway.app/api/v1/Posts/usuario",
     API_BUSCAR_POST:
-      "https://codeconnect-production-ac3a.up.railway.app/api/v1/Posts",
+      "https://back-production-87f2.up.railway.app/api/v1/Posts",
     API_BUSCAR_USUARIO:
-      "https://codeconnect-production-ac3a.up.railway.app/api/v1/usuarios",
+      "https://back-production-87f2.up.railway.app/api/v1/usuarios",
     API_EDITAR_USUARIO:
-      "https://codeconnect-production-ac3a.up.railway.app/api/v1/usuarios/atualiza-dados/",
+      "https://back-production-87f2.up.railway.app/api/v1/usuarios/atualiza-dados/",
     API_EXCLUIR_POST:
-      "https://codeconnect-production-ac3a.up.railway.app/api/v1/Posts/",
+      "https://back-production-87f2.up.railway.app/api/v1/Posts/",
     MESSAGE_DISPLAY_TIME: 3000,
     MIN_LOADER_TIME: 1500,
     CLOUDINARY: {

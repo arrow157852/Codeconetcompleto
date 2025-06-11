@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const CONFIG = {
     API_PUBLICACAO_URL:
-      "https://codeconnect-production-ac3a.up.railway.app/api/v1/Posts",
+      "https://back-production-87f2.up.railway.app/api/v1/Posts",
     MESSAGE_DISPLAY_TIME: 3000,
     PERFIL_PAGE: "/pages/perfil.html",
     CLOUDINARY: {
