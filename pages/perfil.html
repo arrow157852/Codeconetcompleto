@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/perfil.css" />
+    <title>CodeConnect</title>
+    <style>
+        #input-nome-usuario,
+        #input-descricao-usuario,
+        #input-foto-perfil,
+        #salvar-perfil-btn,
+        #cancelar-edicao-btn {
+            display: none;
+        }
+
+        #preview-foto-perfil {
+            display: none;
+            max-width: 150px;
+            margin-top: 10px;
+        }
+
+        #detalhes-modal-post {
+            display: none;
+        }
+
+        #detalhe-imagem-post {
+            max-width: auto;
+            height: auto;
+            align-items: center;
+            display: flex;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: none;
+        }
+
+
+        #confirmacao-exclusao-modal {
+            display: none;
+
+        }
+
+        #confirmacao-exclusao-modal button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="aside-container"></div>
+
+    <main>
+        <div class="detalhes-usuario">
+            <div class="container-botoes-e-foto">
+                <div class="container-img">
+                    <input type="file" id="input-foto-perfil" class="input-foto-perfil">
+                    <img id="foto-perfil-padrao"
+                        src="../assets/img/perfil/Suspicious Look Around GIF by nounish ⌐◨-◨.gif" alt="Foto de Perfil"
+                        class="foto-perfil">
+                    <img id="preview-foto-perfil" src="" alt="Pré-visualização da Foto" class="foto-perfil"
+                        style="display: none;">
+                </div>
+
+                <div class="detalhes-usuario-botoes-acao">
+                    <button id="salvar-perfil-btn">Salvar</button>
+                    <button id="cancelar-edicao-btn">Cancelar</button>
+                </div>
+            </div>
+            <div class="container-inputs">
+                <input type="text" id="input-nome-usuario" placeholder="Seu Nome">
+                <textarea id="input-descricao-usuario" placeholder="Sua Descrição" maxlength="200"></textarea>
+            </div>
+
+            <div class="info-usuario-texto">
+                <h1 id="nome-usuario">Nome</h1>
+                <p id="descricao-usuario">Descrição</p>
+            </div>
+
+            <div class="container-botao">
+                <button id="editar-perfil-btn" class="editar-perfil-btn">Editar</button>
+            </div>
+        </div>
+
+        <output id="mensagem-perfil"></output>
+        <h2 class="section-title"> Meus Projetos</h2>
+        <div id="posts-list"></div>
+
+    </main>
+
+    <div id="detalhes-modal-post" class="modal">
+        <div class="modal-content">
+            <span class="close-button" aria-label="Fechar Modal">&times;</span>
+            <img id="detalhe-imagem-post" src="" alt="Imageem do Post" />
+            <h2 id="detalhe-titulo-post"></h2>
+            <p id="detalhe-descricao-post"></p>
+            <p id="detalhe-usuario-post"></p>
+            <p id="detalhe-data-criacao"></p>
+            <button id="btn-excluir-post" class="delete-button">Excluir
+                Post</button>
+
+            <div id="inline-confirmacao-exclusao" style="display: none; margin-top: 10px; text-align: center;">
+                <p style="color:  #81fe88; margin-bottom: 10px;">Tem certeza que deseja excluir?</p>
+                <button id="btn-confirmar-inline"
+                    style="background-color: #dc3545; color: white; padding: 8px 15px; border: none; border-radius: 4px; cursor: pointer; margin-right: 5px;">Sim</button>
+                <button id="btn-cancelar-inline"
+                    style="background-color:#888888; color: white; padding: 8px 15px; border: none; border-radius: 4px; cursor: pointer;">Não</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="../assets/js/authUtils.js"></script>
+    <script src="../assets/js/perfil.js"></script>
+    <script src="../assets/js/aside.js"></script>
+</body>
+
+</html>
